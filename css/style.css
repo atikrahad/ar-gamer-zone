@@ -184,8 +184,88 @@ div > button{
     right: 0;
 }
 .gamer-content h4{
-    
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
 }
+
+/* online gamer funny videos */
+.online-game{
+    text-align: center;
+    margin: 50px;
+}
+.online-game h1{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.online-game p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.online-game .funny{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.video-container{
+    display: flex;
+    max-width: 75%;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.video{
+    width: 350px;
+    height: 400px;
+}
+.video p{
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    position: relative;
+}
+.play-buttun{
+
+}
+.video1{
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 95%;
+    background-size: contain;
+    background-image: url("../images/Rectangle\ 4.png");
+}
+.video2{
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 95%;
+    background-size: contain;
+    background-image: url("../images/Rectangle\ 5.png");
+}
+.video3{
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 95%;
+    background-size: contain;
+    background-image: url("../images/Rectangle\ 6.png");
+}
+.video4{
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 95%;
+    background-size: contain;
+    background-image: url("../images/Rectangle\ 7.png");
+}
+
+
+
+
 
 
 /* Responsive mobile css setion == */
@@ -223,6 +303,29 @@ div > button{
     }
     div > button{
         padding: 10px 12px;
+    }
+    .video-container{
+        flex-direction: column;
+        max-width: 95%;
+        margin:30px auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .video p{
+        text-align: center;
+    }
+    .video{
+        width: 90%;
+        margin:0  auto;
+        
+        
+    }
+    .video > div{
+        width: 90%;
+        margin: 0 auto;
+        
+        background-position: 50%;
     }
     .benner-content{
         background-image:   linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%), url("../images/Group\ 14.png");
@@ -279,5 +382,27 @@ div > button{
         width: 90%;
         margin: 40px 0;
         flex-direction: column;
+    }
+    .video-container{
+        flex-wrap: wrap;
+        max-width: 85%;
+        margin:30px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .video p{
+        text-align: center;
+    }
+    .video{
+        width: 90%;
+        margin:0  auto;
+        
+        
+    }
+    .video > div{
+        width: 90%;
+        margin: 0 auto;
+        
+        background-position: 50%;
     }
 }
