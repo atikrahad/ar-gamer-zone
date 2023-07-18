@@ -1,1 +1,22 @@
 /* Responsive mobile css setion == */
+@media screen and (max-width:630px) {
+    .nav-container,
+    .nav-item, 
+    .list ul{
+        flex-direction: column;
+    }
+    .logo, .list{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* rsponsive tablet css section */
+
+@media screen and (min-width: 630px) and (max-width:960px) {
+    .nav-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
