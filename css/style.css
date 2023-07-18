@@ -110,7 +110,7 @@ ul li{
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 90px;
+    font-size: 95px;
     font-weight: 800;
     margin-bottom: 15px;
 }
@@ -120,8 +120,8 @@ ul li{
     font-weight: 500;
     margin-bottom: 10px;
 }
-.benner-content > button{
-    padding: 8px 15px;
+div > button{
+    padding: 20px 40px;
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -138,7 +138,93 @@ ul li{
 .benner-img img{
     width: 100%;
 }
-.benner-content, .benner-img{
+.benner-img{
     width: 50%;
 }
 /* banner sectin end   */
+
+
+/* Responsive mobile css setion == */
+@media screen and (max-width:630px) {
+    .nav-container,
+    .nav-item, 
+    .list ul{
+        flex-direction: column;
+    }
+    .benner-container{
+        flex-direction: column-reverse;
+        max-width: 95%;
+    }
+    .benner{
+        background: none;
+    }
+    
+    .benner-img{
+        width:95%;
+    }
+    .benner-content h1{
+        font-size: 36px;
+    }
+    .benner-content h2{
+        font-size: 70px;
+    }
+    .benner-content p,
+    .fa-circle-play,
+    .fa-arrow-down{
+        font-size: 14px;
+    }
+    div > button{
+        padding: 10px 12px;
+    }
+    .benner-content{
+        background-image:   linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%), url("../images/Group\ 14.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items:center;
+        padding: 50px 0;
+
+        text-align: left;
+        width: 90%;
+        margin: 40px 0;
+        flex-direction: column;
+    }
+    .logo, .list{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* rsponsive tablet css section */
+
+@media screen and (min-width: 630px) and (max-width:990px) {
+    .nav-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .benner-container{
+        flex-direction: column-reverse;
+        max-width: 85%;
+    }
+    .benner{
+        background: none;
+    }
+    
+    .benner-img{
+        width:95%;
+    }
+    .benner-content{
+        background-image:   linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%), url("../images/Group\ 14.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items:center;
+        padding: 50px 0;
+
+        text-align: left;
+        width: 90%;
+        margin: 40px 0;
+        flex-direction: column;
+    }
+}
