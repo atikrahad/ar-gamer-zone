@@ -369,6 +369,38 @@ div > button{
     background-color: #fff;
 }
 
+/* Sponsors css section  */
+
+.sponsors-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.sponsors-container{
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    gap: 3%;
+}
+.sponsors{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+    background: #FFF;
+    margin-bottom: 10px;
+}
+.sponsors:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+}
+.sponsors p{
+    font-size: 18px;
+    font-weight: 500;
+
+}
 
 
 
@@ -392,6 +424,10 @@ div > button{
     }
     .benner{
         background: none;
+    }
+    .sponsors-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .benner-img,
@@ -497,6 +533,11 @@ div > button{
         flex-direction: column;
         gap: 30px;
 
+    }
+    .sponsors-container{
+        display: grid;
+        padding: 50px 10%;
+        grid-template-columns: repeat(3, 1fr);
     }
     .career-content{
         padding: 0;
