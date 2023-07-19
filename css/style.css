@@ -402,6 +402,56 @@ div > button{
 
 }
 
+footer{
+    background-color: #0B0223;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 80%;
+    margin: auto;
+}
+.footer-heading{
+    margin: 10px 0;
+}
+.footer-heading a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.footer-menu{
+    margin: 10px 0;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+.social-icon{
+    margin: 10px 0;
+}
+.social-icon i{
+    font-size: 46px;
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    text-shadow: none;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
 
 
 /* Responsive mobile css setion == */
@@ -414,6 +464,14 @@ div > button{
     .careers-container{
         flex-direction: column;
     }
+    .footer-heading,
+    .footer-menu,
+    .social-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
+    }
     .career-content{
         padding-left: 0;
     }
@@ -425,10 +483,10 @@ div > button{
     .benner{
         background: none;
     }
-    .sponsors-container{
+    /* .sponsors-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
+    } */
     
     .benner-img,
     .gamer-content,
@@ -630,5 +688,13 @@ div > button{
         position: relative;
         right: 40%;
         bottom: 200px;
+    }
+    .footer-heading,
+    .footer-menu,
+    .social-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:center;
     }
 }
