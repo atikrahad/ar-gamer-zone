@@ -515,7 +515,6 @@ footer p{
     
     .benner-img,
     .gamer-content,
-    .play-game-content,
     .play-game-img{
         width:95%;
         text-align: center;
@@ -523,6 +522,14 @@ footer p{
     .career-content, .career-img{
         width: 85%;
         margin: 20px auto;
+    }
+    .play-game-content h1{
+
+        font-size: 38px;
+    }
+    .play-game-content{
+        width: 100%;
+        text-align: center;
     }
     .play-game-content p{
         padding: 0;
@@ -540,7 +547,7 @@ footer p{
     .sub-img {
         position: relative;
         right: 45%;
-        bottom: 150px;
+        bottom: 80px;
     }
     .benner-content h1{
         font-size: 36px;
