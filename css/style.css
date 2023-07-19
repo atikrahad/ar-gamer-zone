@@ -695,7 +695,7 @@ footer p{
         text-align: center;
     }
     .play-game-content,
-    .play-game-img
+    .dual-img
     {
         margin: 0 auto;
         width:95%;
@@ -704,7 +704,7 @@ footer p{
     .play-game-content p{
         padding: 0;
     }
-    .play-game-img {
+    .play-game-img{
         margin: 50px;
     }
     .sub-img {
