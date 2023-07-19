@@ -266,6 +266,7 @@ div > button{
     justify-content: center;
     align-items: center;
     border-radius: 12px;
+    opacity: 0;
 }
 .hover-item p{
     font-size: 20px;
@@ -523,9 +524,7 @@ footer p{
     .play-game-content p{
         padding: 0;
     }
-    .play-game-img {
-        margin: 50px;
-    }
+    
     .sub-img {
         position: relative;
         right: 45%;
