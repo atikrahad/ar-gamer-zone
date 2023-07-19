@@ -267,7 +267,56 @@ div > button{
     background-image: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60));
 }
 
+/* play onstant gam e */
 
+.play-game{
+    display: flex;
+    gap: 150px;
+    /* align-items: center; */
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 30px auto;
+}
+.play-game-content{
+    width: 50%;
+    text-align: right;
+    padding: 10% 10px;
+}
+.play-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.play-game-content h1{
+    color: #0B0223;
+    line-height: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.play-game-content p{
+    color: #534C64;
+    line-height: 30px;
+    padding:0 0 0 35px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.play-game-img{
+    width: 50%;
+    height: 100%;
+}
+.play-game-img img{
+    width: 100%;
+}
+.sub-img img{
+    width: 50%;
+}
+.sub-img {
+    position: relative;
+    right: 15%;
+    bottom: 195px;
+}
 
 
 
@@ -278,7 +327,8 @@ div > button{
     .nav-container,
     .nav-item, 
     .list ul,
-    .gamer-container{
+    .gamer-container,
+    .play-game{
         flex-direction: column;
     }
     
@@ -291,9 +341,22 @@ div > button{
     }
     
     .benner-img,
-    .gamer-content{
+    .gamer-content,
+    .play-game-content,
+    .play-game-img{
         width:95%;
         text-align: center;
+    }
+    .play-game-content p{
+        padding: 0;
+    }
+    .play-game-img {
+        margin: 50px;
+    }
+    .sub-img {
+        position: relative;
+        right: 45%;
+        bottom: 150px;
     }
     .benner-content h1{
         font-size: 36px;
@@ -368,11 +431,13 @@ div > button{
 
 /* rsponsive tablet css section */
 
-@media screen and (min-width: 630px) and (max-width:990px) {
+@media screen and (min-width: 630px) and (max-width:1020px) {
     .nav-container,
-    .gamer-container{
+    .gamer-container,
+    .play-game{
         flex-direction: column;
         gap: 30px;
+
     }
     .benner-container{
         flex-direction: column-reverse;
@@ -435,5 +500,28 @@ div > button{
     .hover-item img{
         margin: 10px auto;
         width: 15%;
+    }
+    .play-game-content,
+    .play-game-img{
+        width:85%;
+        text-align: center;
+    }
+    .play-game-content,
+    .play-game-img
+    {
+        margin: 0 auto;
+        width:95%;
+        text-align: center;
+    }
+    .play-game-content p{
+        padding: 0;
+    }
+    .play-game-img {
+        margin: 50px;
+    }
+    .sub-img {
+        position: relative;
+        right: 40%;
+        bottom: 200px;
     }
 }
