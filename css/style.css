@@ -28,6 +28,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 .logo h1{
     font-size: 2.8rem;
@@ -73,11 +74,13 @@ ul li{
     font-size: 18px;
     font-weight: 500;
     color: #3C354F;
+    cursor: pointer;
 }
 .fa-circle-play,
 .fa-arrow-down{
     color: red;
     font-size: 25px;
+    
 }
 .fa-arrow-down{
     padding-right: 6px;
@@ -129,6 +132,14 @@ div > button{
     margin: 20px 15px 20px 0;
     border: none;
 }
+.benner-content .btn1:hover{
+    background:#ff42a4c2;
+    cursor: pointer;
+}
+.benner-content .btn2:hover{
+    background:#4ec4f7bd;
+    cursor: pointer;
+}
 .benner-content .btn1{
     background:#FF42A5;
 }
@@ -178,6 +189,10 @@ div > button{
     line-height: 30px;
     margin: 8px;
 }
+.gamer-content button:hover{
+    background-image: linear-gradient(90deg, #ff42a4c7 0%, #ff42a4ce 100%);
+    cursor: pointer;
+}
 .gamer-content button{
     background-image: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     position: relative;
@@ -223,7 +238,6 @@ div > button{
 .video{
     width: 25%;
     height: 400px;
-    position: relative;
 }
 .video p{
     color: #534C64;
@@ -234,18 +248,24 @@ div > button{
     position: relative;
     margin-top: 20px;
 }
-.video img{
+.video-img{
+    position: relative;
+    height: 300px;
+}
+.video-img img{
     width: 100%;
+    height: 100%;
 }
 .hover-item{
     position: absolute;
-    top: 0;
-    bottom:  28%;
-    right: 0px;
-    left: 0px;
     width: 100%;
-    margin:  auto;
-    opacity: 0;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
 }
 .hover-item p{
     font-size: 20px;
@@ -253,21 +273,19 @@ div > button{
     background-image: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     -webkit-background-clip: text;
     color: transparent;
-    position: relative;
-    bottom: 47%;
-    text-align: center;
+    position: inherit;
+    top: 60%;
 }
 .hover-item img{
     width: 20%;
     height: 25%;
-    margin: 40% auto;
 }
 .hover-item:hover{
     opacity: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60));
 }
 
-/* play onstant gam e */
+/* play instant game */
 
 .play-game{
     display: flex;
@@ -464,6 +482,9 @@ footer p{
     .careers-container{
         flex-direction: column;
     }
+    .play-game{
+        max-width: 85%;
+    }
     .footer-heading,
     .footer-menu,
     .social-icon{
@@ -539,21 +560,7 @@ footer p{
         width: 85%;
         height: 400px;
     }
-    .video img{
-        width: 100%;
-        height: 95%;
-    }
-    .hover-item{
-        position: absolute;
-        top: 0;
-        bottom:  5%;
-        right: 0px;
-        left: 0px;
-        width: 100%;
-        margin:  auto;
-        opacity: 0;
-        border-radius: 25px;
-    }
+   
     .hover-item img{
         margin: 10px auto;
         width: 15%;
@@ -644,28 +651,23 @@ footer p{
         text-align: center;
     }
     .video{
-        width: 85%;
-        height: 400px;
+        width: 80%;
     }
     .video img{
         width: 100%;
-        height: 95%;
+        height: 100%;
     }
-    .hover-item{
-        position: absolute;
-        top: 0;
-        bottom:  5%;
-        right: 0px;
-        left: 0px;
-        width: 100%;
-        margin:  auto;
-        opacity: 0;
-        border-radius: 25px;
-    }
+    
     .hover-item img{
         margin: 10px auto;
         width: 15%;
     }
+    .hover-item p{
+        top: 60%;
+        position: inherit;
+    }
+    
+
     .play-game-content,
     .play-game-img{
         width:85%;
