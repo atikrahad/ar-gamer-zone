@@ -489,6 +489,9 @@ footer p{
     .play-game{
         max-width: 85%;
     }
+    .gamer-container{
+        max-width: 95%;
+    }
     .footer-heading,
     .footer-menu,
     .social-icon{
