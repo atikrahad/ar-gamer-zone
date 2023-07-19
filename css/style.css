@@ -283,6 +283,7 @@ div > button{
 }
 .hover-item:hover{
     opacity: 1;
+    border: 3px solid #F948B2;
     background-image: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60));
 }
 
@@ -467,6 +468,7 @@ footer{
     margin: 0 15px;
     cursor: pointer;
     text-shadow: none;
+    padding: 15px 0;
 }
 footer p{
     color: rgba(255, 255, 255, 0.60);
