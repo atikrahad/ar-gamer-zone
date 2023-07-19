@@ -524,7 +524,16 @@ footer p{
     .play-game-content p{
         padding: 0;
     }
-    
+    .play-game-img{
+        width: 95%;
+    }
+    .dual-img{
+        max-width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
     .sub-img {
         position: relative;
         right: 45%;
