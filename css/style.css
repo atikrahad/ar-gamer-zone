@@ -193,7 +193,7 @@ div > button{
 /* online gamer funny videos */
 .online-game{
     text-align: center;
-    margin: 50px;
+    margin: 50px 0;
 }
 .online-game h1{
     color: #0B0223;
@@ -218,10 +218,12 @@ div > button{
     margin: 30px auto;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 .video{
-    width: 350px;
+    width: 25%;
     height: 400px;
+    position: relative;
 }
 .video p{
     color: #534C64;
@@ -230,38 +232,41 @@ div > button{
     line-height: 30px;
     text-align: left;
     position: relative;
+    margin-top: 20px;
 }
-.play-buttun{
+.video img{
+    width: 100%;
+}
+.hover-item{
+    position: absolute;
+    top: 0;
+    bottom:  28%;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    margin:  auto;
+    opacity: 0;
+}
+.hover-item p{
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    bottom: 47%;
+    text-align: center;
+}
+.hover-item img{
+    width: 20%;
+    height: 25%;
+    margin: 40% auto;
+}
+.hover-item:hover{
+    opacity: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60));
+}
 
-}
-.video1{
-    height: 300px;
-    background-repeat: no-repeat;
-    width: 95%;
-    background-size: contain;
-    background-image: url("../images/Rectangle\ 4.png");
-}
-.video2{
-    height: 300px;
-    background-repeat: no-repeat;
-    width: 95%;
-    background-size: contain;
-    background-image: url("../images/Rectangle\ 5.png");
-}
-.video3{
-    height: 300px;
-    background-repeat: no-repeat;
-    width: 95%;
-    background-size: contain;
-    background-image: url("../images/Rectangle\ 6.png");
-}
-.video4{
-    height: 300px;
-    background-repeat: no-repeat;
-    width: 95%;
-    background-size: contain;
-    background-image: url("../images/Rectangle\ 7.png");
-}
 
 
 
